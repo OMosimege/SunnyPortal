@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
+class Energy(models.Model):
+    kilowatts = models.CharField(max_length=200)
+    time = models.DateTimeField('date published')
